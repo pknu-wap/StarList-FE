@@ -4,12 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev:web": "vite",
+    "build:web": "vite build",
+    "dev:extension": "vite --config vite.chrome-extension.config.js",
+    "build:extension": "vite build --config vite.chrome-extension.config.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.8.4",
     "prettier-eslint": "^16.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -27,6 +30,7 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
     "postcss": "^8.5.3",
+    "rollup-plugin-copy": "^3.5.0",
     "tailwindcss": "^4.0.15",
     "vite": "^6.2.0"
   },
